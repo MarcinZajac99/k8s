@@ -7,9 +7,9 @@ spec:
   - name: cpu-stress
     image: vish/stress
     resources:
-      limits:
+      limits: "100"
         cpu: "1"
-      requests:
+      requests: "100"
         cpu: "0.5"
     args:
     - -cpus
